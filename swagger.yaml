@@ -1,0 +1,181 @@
+swagger: "2.0"
+info:
+  version: v1
+  title: Products
+schemas:
+  - http
+host: localhost
+basePath: /products
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+   /computer:
+    get:
+      summary: Returns a list of all computer types
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+  
+   /computer/{id}:
+    get:
+      summary: Returns a computer type by id
+      parameters:
+        - name: id
+          type: integer
+      responses: 
+        '200':
+          description: OK
+        '400':
+          description: Bad Request 
+          
+    delete:
+      summary: Delete a computer type by id
+      parameters:
+        - name: id
+          type: integer
+      responses: 
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+   /desktop/{id}:
+    get:
+      summary: Returns a Desktop device by id
+      parameters:
+        - name: id
+          type: integer
+      responses: 
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+    delete:
+      summary: Delete a Desktop device by id
+      parameters:
+        - name: id
+          type: integer
+      responses: 
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+
+   /desktop:
+    get:
+      summary: Returns a list of all Desktop devices
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request   
+    post:
+      summary: Insert new Desktop devices
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request 
+    put:
+      summary: Update existing Desktop devices
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+   /laptop/{id}:
+    get:
+      summary: Returns a Laptop device by id
+      parameters:
+        - name: id
+          type: integer
+      responses: 
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+    delete:
+      summary: Delete a Laptop device by id
+      parameters:
+        - name: id
+          type: integer
+      responses: 
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+   /laptop:
+    get:
+      summary: Returns a list of all Laptop devices
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request   
+    post:
+      summary: Insert new Laptop devices
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request 
+    put:
+      summary: Update existing Laptop devices
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+   /tablet/{id}:
+    get:
+      summary: Returns a Tablet device by id
+      parameters:
+        - name: id
+          type: integer
+      responses: 
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+    delete:
+      summary: Delete a Tablet device by id
+      parameters:
+        - name: id
+          type: integer
+      responses: 
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+   /tablet:
+    get:
+      summary: Returns a list of all Tablet devices
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request   
+    post:
+      summary: Insert new Tablet devices
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request 
+    put:
+      summary: Update existing Tablet devices
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+  
+  
+      
+
+
+
+      
