@@ -2,6 +2,8 @@
 // Set json
 header("Content-type: application/json");
 
+// Random git comment
+
 // Get the HTTP method
 $requestMethod = strtolower($_SERVER['REQUEST_METHOD']);
 
